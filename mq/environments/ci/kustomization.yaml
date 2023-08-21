@@ -58,3 +58,9 @@ resources:
 # - triggertemplates/mq-spring-app-stage-triggertemplate.yaml
 # - eventlisteners/mq-spring-app-stage-eventlistener.yaml
 # - routes/mq-spring-app-stage-route.yaml
+
+
+- eventlisteners/cntk-event-listener.yaml
+- triggerbindings/cntk-binding.yaml
+- triggertemplates/mq-qm-dev.yaml
+- routes/cntk-route.yaml
