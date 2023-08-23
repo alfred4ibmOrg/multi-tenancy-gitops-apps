@@ -299,6 +299,10 @@ spec:
             cp -r "$SOURCE_DIR"/configmap*.yaml $(params.app-path)/$(params.environment)/"${SUBDIR}"/configmap
           fi
 
+          if ls $SOURCE_DIR/deployment*.yaml &> /dev/null; then
+            cp -r "$SOURCE_DIR"/deployment*.yaml $(params.app-path)/$(params.environment)/"${SUBDIR}"/deployment
+          fi
+
           if ls $SOURCE_DIR/*secret*.yaml &> /dev/null; then
             cp -r "$SOURCE_DIR"/*secret*.yaml $(params.app-path)/$(params.environment)/"${SUBDIR}"/secrets
           fi
