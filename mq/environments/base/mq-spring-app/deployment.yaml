@@ -11,7 +11,6 @@ metadata:
     app.kubernetes.io/part-of: inventory
     app.openshift.io/runtime: spring
 spec:
-  replicas: 1
   selector:
     matchLabels:
       app.kubernetes.io/name: mq-spring-app
