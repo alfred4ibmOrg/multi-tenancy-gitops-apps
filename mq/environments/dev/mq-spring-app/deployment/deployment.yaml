@@ -97,5 +97,5 @@ spec:
                 name: jaeger-access
                 optional: true
           resources:
-          requests:
-  	    cpu: 100m
+            requests:
+              cpu: 100m
