@@ -1,0 +1,21 @@
+kind: HorizontalPodAutoscaler
+apiVersion: autoscaling/v2beta2
+metadata:
+  name: hpa4mq-spring-app
+  namespace: dev
+  uid: 931e32e4-b8f3-49de-b8af-fb41c2a7bdef
+  creationTimestamp: '2023-08-25T07:19:17Z'
+spec:
+  scaleTargetRef:
+    kind: Deployment
+    name: mq-spring-app
+    apiVersion: apps/v1
+  minReplicas: 1
+  maxReplicas: 3
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        target:
+          type: Utilization
+          averageUtilization: 100
