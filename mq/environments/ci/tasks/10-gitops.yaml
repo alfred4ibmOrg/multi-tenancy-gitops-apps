@@ -261,12 +261,13 @@ spec:
               version: ${VERSION}
               repository: ${HELM_URL}
           EOF
-
-          cat <<EOF >"${SUBDIR_DEST}/values.yaml"
-          global: {}
-          ${APP_NAME}:
-            replicaCount: 1
-          EOF
+	  
+	  ##Alfred
+          ##cat <<EOF >"${SUBDIR_DEST}/values.yaml"
+          ##global: {}
+          ##${APP_NAME}:
+          ##  replicaCount: 1
+          ##EOF
 
           else
             echo "GitOps repo configured but unable to update application config"
