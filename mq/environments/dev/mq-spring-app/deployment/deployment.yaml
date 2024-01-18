@@ -34,8 +34,8 @@ spec:
           imagePullPolicy: IfNotPresent
           volumeMounts:
           resources:
-  	    requests:
-	      cpu: 100m
+            requests:
+              cpu: 100m
           ports:
             - name: http
               containerPort: 8080
