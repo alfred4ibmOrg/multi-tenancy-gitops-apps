@@ -68,7 +68,9 @@ spec:
       script: |
         #!/usr/bin/env bash
         set -ex
-        npm install -g npm@10.4.0
+        npm update -g npm
+        npm install -g n
+        n stable
         echo "Current branch: $(git rev-parse --abbrev-ref HEAD)"
         git fetch --tags
         git config --global user.email "cloud-native-toolkit@example.com"
