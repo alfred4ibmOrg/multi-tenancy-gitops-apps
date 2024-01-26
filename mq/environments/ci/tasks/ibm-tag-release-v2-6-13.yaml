@@ -69,7 +69,7 @@ spec:
         #!/usr/bin/env bash
         set -ex
         npm install -g n
-        n 18.19.0
+        n 16.17.0
         echo "Current branch: $(git rev-parse --abbrev-ref HEAD)"
         git fetch --tags
         git config --global user.email "cloud-native-toolkit@example.com"
