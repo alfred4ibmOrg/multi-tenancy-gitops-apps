@@ -14,7 +14,7 @@ spec:
     availability:
       type: SingleInstance
     debug: false
-    image: cp.icr.io/cp/ibm-mqadvanced-server-integration@sha256:e527f7279954a0abd9e5a50b8287dbdc3fff36aaeacf0335ebc0c4f7a0aab58e
+    image: image-registry.openshift-image-registry.svc:5000/ci/mq-qm01:0.0.2
     imagePullPolicy: Always
     livenessProbe:
       failureThreshold: 1
