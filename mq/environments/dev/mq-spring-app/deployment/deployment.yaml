@@ -33,9 +33,6 @@ spec:
           image: "image-registry.openshift-image-registry.svc:5000/ci/mq-spring-app:0.0.4"
           imagePullPolicy: IfNotPresent
           volumeMounts:
-          resources:
-            requests:
-              cpu: 100m
           ports:
             - name: http
               containerPort: 8080
