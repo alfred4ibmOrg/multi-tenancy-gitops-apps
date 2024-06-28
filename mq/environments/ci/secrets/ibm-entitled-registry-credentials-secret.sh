@@ -11,6 +11,14 @@ IBM_ENTITLEMENT_KEY=${IBM_ENTITLEMENT_KEY}
 SEALED_SECRET_NAMESPACE=${SEALED_SECRET_NAMESPACE:-sealed-secrets}
 SEALED_SECRET_CONTOLLER_NAME=${SEALED_SECRET_CONTOLLER_NAME:-sealed-secrets}
 
+#Alfred#
+#SEALED_SECRET_NAMESPACE=kube-system
+#SEALED_SECRET_CONTROLLER_NAME=sealed-secrets-controller
+
+echo ${SEALED_SECRET_NAMESPACE}
+########
+
+
 # Create Kubernetes Secret yaml
 oc create secret generic ibm-entitled-registry-credentials \
 --from-literal=IBM_ENTITLED_REGISTRY_USER=cp \
