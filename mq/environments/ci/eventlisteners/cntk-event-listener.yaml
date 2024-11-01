@@ -11,9 +11,9 @@ spec:
     interceptors:
       - ref:
           name: "cel"
-        params:
-        - name: "filter"
-          value: "header.match('X-GitHub-Event', 'push') && body.ref == 'refs/heads/qm1-alfred4ibmOrg' && body.repository.full_name == 'alfred4ibmOrg/mq-qm01'"
+        #params:
+        #- name: "filter"
+        #  value: "header.match('X-GitHub-Event', 'push') && body.ref == 'refs/heads/qm1-alfred4ibmOrg' && body.repository.full_name == 'alfred4ibmOrg/mq-qm01'"
     bindings:
       - ref: cnkt-trigger-binding
     template:
@@ -22,9 +22,9 @@ spec:
     interceptors:
       - ref:
           name: "cel"
-        params:
-        - name: "filter"
-          value: "header.match('X-GitHub-Event', 'push') && body.ref == 'refs/heads/mq-spring-alfred4ibmOrg' && body.repository.full_name == 'alfred4ibmOrg/mq-spring-app'"
+        #params:
+        #- name: "filter"
+        #  value: "header.match('X-GitHub-Event', 'push') && body.ref == 'refs/heads/mq-spring-alfred4ibmOrg' && body.repository.full_name == 'alfred4ibmOrg/mq-spring-app'"
     bindings:
       - ref: cnkt-trigger-binding
     template:
