@@ -7,17 +7,17 @@ metadata:
 spec:
   serviceAccountName: pipeline
   triggers:
-  - name: mq-qm01-dev
-    interceptors:
-      - ref:
-          name: "cel"
-        #params:
-        #- name: "filter"
-        #  value: "header.match('X-GitHub-Event', 'push') && body.ref == 'refs/heads/qm1-alfred4ibmOrg' && body.repository.full_name == 'alfred4ibmOrg/mq-qm01'"
-    bindings:
-      - ref: cnkt-trigger-binding
-    template:
-      ref: mq-qm-dev
+  #- name: mq-qm01-dev
+  #  interceptors:
+  #    - ref:
+  #        name: "cel"
+  #      #params:
+  #      #- name: "filter"
+  #      #  value: "header.match('X-GitHub-Event', 'push') && body.ref == 'refs/heads/qm1-alfred4ibmOrg' && body.repository.full_name == 'alfred4ibmOrg/mq-qm01'"
+  #  bindings:
+  #    - ref: cnkt-trigger-binding
+  #  template:
+  #    ref: mq-qm-dev
   - name: mq-spring-app-dev
     interceptors:
       - ref:
